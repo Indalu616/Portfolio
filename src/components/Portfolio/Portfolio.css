@@ -1,0 +1,86 @@
+:root {
+  --yellow-color: #ffb400;
+  --white-color: #ffffff;
+  --icon-bg: #2b2a2a;
+  --body-bg: #111111;
+}
+.my-works h1 {
+  text-align: center;
+  margin-top: 4rem;
+  margin-bottom: 6rem;
+  -webkit-text-stroke: 2px white;
+  -webkit-text-fill-color: white;
+}
+.my-works h1 span {
+  -webkit-text-stroke: 2px var(--yellow-color);
+  -webkit-text-fill-color: var(--yellow-color);
+}
+.my-works .filters {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.filters p {
+  /* margin-bottom: 2rem; */
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+.filters p:hover {
+  color: var(--yellow-color);
+}
+.filters .under-line {
+  border-bottom: 2px solid var(--yellow-color);
+  color: #ffb400;
+}
+
+.project-box img {
+  cursor: pointer;
+}
+.project-box {
+  position: relative;
+}
+.project-box .pro-title {
+  cursor: pointer;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--yellow-color);
+  transition: all 0.4s;
+  opacity: 0;
+}
+.project-box:hover .pro-title {
+  height: 100%;
+  opacity: 1;
+}
+.pro-title p {
+  font-weight: 700;
+}
+
+/* projects list style */
+
+.work-list {
+  margin-bottom: 120px;
+}
+
+.pro {
+  transition: all 0.4s;
+  animation-name: myPro;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+}
+@keyframes myPro {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}

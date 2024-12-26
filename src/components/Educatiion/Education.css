@@ -1,0 +1,60 @@
+:root {
+  --yellow-color: #ffb400;
+  --white-color: #ffffff;
+  --icon-bg: #2b2a2a;
+  --body-bg: #111111;
+  --i: 62;
+  --progress-bar-stroke-width: 2;
+  --progress-bar-size: 300px;
+}
+
+.edu-h2 {
+  margin-bottom: 3rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+.exp-section {
+  /* background-color: blue; */
+  padding-left: 2rem;
+  margin-bottom: 2rem;
+  border-left: 1px solid var(--yellow-color);
+}
+.exp-section .exp-container {
+  position: relative;
+  padding: 1rem;
+}
+.exp-section .exp-container .basket-badge {
+  position: absolute;
+  top: 0;
+  left:-3rem;
+  background-color: #ffb400;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.basket-badge i{
+    color: white;
+}
+.exp-p{
+   color:rgba(255, 255, 255, 0.797);
+}
+.exp-container p:nth-child(1){
+    font-size: 0.75rem;
+    color: silver;
+    background-color: var(--icon-bg);
+    width: 100px;
+    text-align: center;
+    padding: 0.2rem;
+    border-radius: 1rem;
+}
+.exp-container h3{
+    font-size: 1.2rem;
+    color: white;
+    font-weight: 600;
+}
+.exp-container h3 span{
+    color: silver;
+}

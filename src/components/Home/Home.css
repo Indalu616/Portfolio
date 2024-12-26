@@ -1,0 +1,203 @@
+.home-cont {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  animation-name: home;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;
+  transition: all 0.4s;
+}
+@keyframes home {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+.home-cont .img-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.home-cont .img-section .img-box {
+  width: 25rem;
+  height: 25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  border: 4px solid var(--icon-bg);
+}
+.home-cont .img-box img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover;
+}
+
+/* about section design */
+
+.about-section .about-desc {
+  padding: 50px 150px 30px 50px;
+  margin-top: 5rem;
+}
+.about-desc button {
+  margin-bottom: 0px;
+}
+.about-section h1:nth-child(1) {
+  color: var(--yellow-color);
+  -webkit-text-stroke: 2px var(--yellow-color);
+  text-transform: uppercase;
+  position: relative;
+  padding-left: 60px;
+}
+.about-section h1:nth-child(2) {
+  padding-left: 60px;
+  height: 50px;
+  margin-bottom: 1rem;
+  -webkit-text-stroke: 1px var(--yellow-color);
+  -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
+}
+.about-section h1:nth-child(1)::before {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  bottom: 0;
+  width: 50px;
+  background-color: var(--yellow-color);
+  height: 8px;
+  border-radius: 5px;
+  content: "";
+}
+.about-section h1:nth-child(2),
+p {
+  color: white;
+}
+.about-section p {
+  line-height: 2;
+  margin-right: 5rem;
+}
+
+.about-section button {
+  width: 250px;
+  height: 50px;
+  border-radius: 25px;
+  border: 2px solid var(--yellow-color);
+  background-color: var(--body-bg);
+  color: white;
+  margin-top: 2rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  position: relative;
+  padding-right: 60px;
+  padding-left: 20px;
+  z-index: 1;
+  overflow: hidden;
+  transition: all 0.4s;
+  margin-bottom: 150px;
+}
+.about-section button i {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--yellow-color);
+  border-radius: 25px;
+  font-size: 1.4rem;
+  transition: all 0.4s;
+}
+.about-section button::before {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 0;
+  background-color: var(--yellow-color);
+  content: "";
+  border-radius: 25px;
+  z-index: -1;
+  transition: all 0.4s;
+}
+.about-section button:hover::before {
+  width: 100%;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+.btn-primary:hover {
+  background-color: var(--body-bg) !important;
+  border: 2px solid var(--yellow-color) !important;
+}
+/* medial query */
+
+@media (max-width: 992px) {
+  .home-cont .img-section .img-box {
+    width: 18rem;
+    height: 18rem;
+    margin-top: 4rem;
+  }
+  .about-section {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .about-section .about-desc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+  }
+  .about-section h1:nth-child(1) {
+    padding-left: 0px;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+    text-align: center;
+  }
+  .about-section h1:nth-child(1)::before {
+    display: none;
+  }
+  .about-section h1:nth-child(2) {
+    padding-left: 0px;
+    text-align: center;
+  }
+  .about-section p {
+    margin-right: 0px;
+    text-align: center;
+  }
+}
+.modal-header {
+  background-color: var(--yellow-color) !important;
+}
+.modal-title {
+  color: white !important;
+}
+.modal-content {
+  border-radius: 20px !important;
+  background: linear-gradient(45deg, #0000 71%, #21201e 0 79%, #0000 0)
+      calc(84px / -2) calc(84px / 2) / calc(2 * 84px) calc(2 * 84px),
+    linear-gradient(135deg, #0000 71%, #21201e 0 79%, #0000 0) calc(84px / 2)
+      calc(84px / 2) / calc(2 * 84px) calc(2 * 84px),
+    radial-gradient(#21201e 35%, #1d1d1f 37%) 0 0/84px 84px;
+  overflow: hidden;
+}
+.modal-body {
+  overflow-y: scroll !important;
+  overflow-x: hidden;
+  height: 80vh !important;
+}
+.modal-edu {
+  padding: 1.5rem !important;
+}
