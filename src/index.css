@@ -24,11 +24,5 @@ body {
 }
 body {
   /* background-color: var(--body-bg) !important; */
-  background:
-		linear-gradient(45deg,#0000 71%,#21201E 0 79%,#0000 0)
-		calc(84px/-2) calc(84px/2)/calc(2*84px) calc(2*84px),
-		linear-gradient(135deg,#0000 71%,#21201E 0 79%,#0000 0)
-		calc(84px/2) calc(84px/2)/calc(2*84px) calc(2*84px),
-		radial-gradient(#21201E 35%,#1D1D1F 37%)
-		0 0/84px 84px;
+  background: linear-gradient(to right, hsl(240, 10%, 3.9%), hsl(240, 3.7%, 15.9%)) !important;
 }

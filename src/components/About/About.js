@@ -1,7 +1,14 @@
 import React from "react";
 import "./About.css";
+import resume from "../../resume/final_resume.pdf"
 import Education from "../Educatiion/Education";
 function About() {
+  const handleDownload=()=>{
+    let aTag=document.createElement("a")
+    aTag.href=resume
+    aTag.download="Indalu_resume"
+    aTag.click()
+  }
   return (
     <div className="about">
       <div className="container">
@@ -49,14 +56,14 @@ function About() {
                 </div>
               </div>
             </div>
-            <button>
+            <button onClick={()=>handleDownload()}>
               Download CV <i className="fa-regular fa-circle-down"></i>
             </button>
           </div>
           <div className="col-lg-6">
             <div className="row">
               <div className="col-lg-6 exp">
-                <div className="exp-box">
+                <div className="exp-box rounded">
                   <h2>
                     <span>3</span>+
                   </h2>
@@ -67,7 +74,7 @@ function About() {
                 </div>
               </div>
               <div className="col-lg-6 exp">
-                <div className="exp-box">
+                <div className="exp-box rounded">
                   <h2>
                     <span>12</span>+
                   </h2>
@@ -77,7 +84,7 @@ function About() {
                 </div>
               </div>
               <div className="col-lg-6 exp">
-                <div className="exp-box">
+                <div className="exp-box rounded">
                   <h2>
                     <span>6</span>+
                   </h2>
@@ -87,7 +94,7 @@ function About() {
                 </div>
               </div>
               <div className="col-lg-6 exp">
-                <div className="exp-box">
+                <div className="exp-box rounded">
                   <h2>
                     <span>10</span>+
                   </h2>
@@ -237,7 +244,7 @@ function About() {
           </div>
         </div>
       </div>
-      <Education />
+      <Education modal={false}/>
     </div>
   );
 }

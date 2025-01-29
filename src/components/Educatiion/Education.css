@@ -22,6 +22,8 @@
 .exp-section .exp-container {
   position: relative;
   padding: 1rem;
+  background-color: hsl(240, 10%, 3.9%);
+  margin-top: 2rem;
 }
 .exp-section .exp-container .basket-badge {
   position: absolute;
@@ -39,22 +41,22 @@
     color: white;
 }
 .exp-p{
-   color:rgba(255, 255, 255, 0.797);
+   /* color:rgba(255, 255, 255, 0.797); */
+   color: hsl(240, 5%, 64.9%);
+   font-size: 0.875rem;
 }
 .exp-container p:nth-child(1){
     font-size: 0.75rem;
     color: silver;
     background-color: var(--icon-bg);
-    width: 100px;
+    /* width: 100px; */
+    display: inline-block;
     text-align: center;
-    padding: 0.2rem;
+    padding: 0.2rem 0.5rem;
     border-radius: 1rem;
 }
 .exp-container h3{
-    font-size: 1.2rem;
+    font-size: 1.125rem;
     color: white;
     font-weight: 600;
-}
-.exp-container h3 span{
-    color: silver;
 }

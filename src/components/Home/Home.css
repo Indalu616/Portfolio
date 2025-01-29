@@ -46,6 +46,9 @@
   padding: 50px 150px 30px 50px;
   margin-top: 5rem;
 }
+.about-desc p{
+  color: hsl(240, 5%, 64.9%);
+}
 .about-desc button {
   margin-bottom: 0px;
 }
@@ -179,18 +182,22 @@ p {
   }
 }
 .modal-header {
-  background-color: var(--yellow-color) !important;
+  background: linear-gradient(
+    to right,
+    hsl(240, 10%, 3.9%),
+    hsl(240, 3.7%, 15.9%)
+  ) !important;
 }
 .modal-title {
   color: white !important;
 }
 .modal-content {
   border-radius: 20px !important;
-  background: linear-gradient(45deg, #0000 71%, #21201e 0 79%, #0000 0)
-      calc(84px / -2) calc(84px / 2) / calc(2 * 84px) calc(2 * 84px),
-    linear-gradient(135deg, #0000 71%, #21201e 0 79%, #0000 0) calc(84px / 2)
-      calc(84px / 2) / calc(2 * 84px) calc(2 * 84px),
-    radial-gradient(#21201e 35%, #1d1d1f 37%) 0 0/84px 84px;
+  background: linear-gradient(
+    to right,
+    hsl(240, 10%, 3.9%),
+    hsl(240, 3.7%, 15.9%)
+  ) !important;
   overflow: hidden;
 }
 .modal-body {
@@ -200,4 +207,10 @@ p {
 }
 .modal-edu {
   padding: 1.5rem !important;
+}
+.btn-close {
+  background-image: url("../../Images/close-img.png") !important;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }

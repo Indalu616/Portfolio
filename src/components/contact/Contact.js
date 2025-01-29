@@ -59,7 +59,7 @@ function Contact() {
           </div>
         </div>
         <div className="col message-section">
-          <form>
+          <form className="rounded">
             <div className="mb-3">
               <label htmlFor="name" className="form-label">
                 Full Name
